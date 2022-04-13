@@ -1,0 +1,314 @@
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scroll-padding-top: 7rem;
+  }
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #fff;
+    box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    padding: 2rem 9%;
+  }
+  .header .logo {
+    font-size: 2.5rem;
+    font-weight: bolder;
+    color: black;
+  }
+  .header .logo i {
+    color: orange;
+  }
+  .header .navbar a {
+    font-size: 1.7rem;
+    display: inline-block;
+    margin: 0 1rem;
+    color: black;
+  }
+  .header .navbar a:hover {
+    color: orange;
+  }
+  .header .dropmenu{
+    position: absolute;
+    top: 100%;
+   display: none;
+   z-index: 100;
+   width: 200px;
+    padding:10px;
+    background-color: white;
+    box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.1);
+  }
+  .header .drop:hover .dropmenu{
+    display: block;
+    
+  } 
+
+
+
+ 
+  .header .icons div {
+    height: 4rem;
+    width: 4rem;
+    line-height: 4rem;
+    border-radius: 0.5rem;
+    background-color: #eee;
+    color: black;
+    font-size: 2rem;
+    margin-left: 0.3rem;
+    cursor: pointer;
+    text-align: center;
+  }
+  .header .icons div:hover {
+    background-color: orange;
+    color: #fff;
+  }
+  #menu-btn {
+    display: none;
+    height: 4rem;
+    width: 4rem;
+    line-height: 4rem;
+    border-radius: 0.5rem;
+    background-color: #eee;
+    color: black;
+    font-size: 2rem;
+    margin-left: 0.3rem;
+    cursor: pointer;
+    text-align: center;
+  }
+ 
+  #close-btn {
+    display: none;
+    height: 4rem;
+    width: 4rem;
+    line-height: 4rem;
+    border-radius: 0.5rem;
+    background-color: #eee;
+    color: black;
+    font-size: 2rem;
+    margin-left: 0.3rem;
+    cursor: pointer;
+    text-align: center;
+  }
+  .header .search-form {
+    position: absolute;
+    top: 110%;
+    right: -110%;
+    width: 50rem;
+    height: 5rem;
+    background-color: #fff;
+    border-radius: 0.5rem;
+    display: flex;
+    overflow: hidden;
+    align-items: center;
+    box-shadow:0 0.5rem 1.5rem rgba(0, 0, 0, 0.1);
+  }
+  .header .search-form.active-search {
+    right: 2rem;
+    transition: 0.4s linear;
+  }
+  .header .search-form input {
+    width: 100%;
+    height: 100%;
+    background: none;
+    /* border: none; */
+    font-size: 1.6rem;
+    color: black;
+    padding: 0 1.5rem;
+    text-transform: none;
+  }
+  .header .search-form label {
+    font-size: 2.2rem;
+    padding-right: 1.5rem;
+    color: black;
+    cursor: pointer;
+  }
+  .header .search-form label:hover {
+    color: orange;
+  }
+  .header .shopping-cart {
+    position: absolute;
+    top: 100%;
+    right: -110%;
+
+    /* border-radius: 0.5rem;
+    box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.1);
+    background-color: #fff;*/
+    width: 33.33%;
+  }
+  .header .shopping-cart.active-cart {
+    right: 2rem;
+    transition: 0.4s linear;
+  }
+  .noti{
+    position: absolute;
+    right: 17.5rem;
+    font-size: 12px;
+    bottom: 3.3rem;
+   font-weight: 700;
+    text-align: center;
+    color: red;
+   
+    
+
+  }
+  /* .header .shopping-cart .box {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    position: relative;
+    margin: 1rem 0;
+  }
+  .header .shopping-cart .box img {
+    height: 10rem;
+  }
+  .header .shopping-cart .box .fa-trash {
+    position: absolute;
+    top: 50%;
+    right: 2rem;
+    cursor: pointer;
+    font-size: 2rem;
+    color: gray;
+    transform: translateY(-50%);
+  }
+  .header .shopping-cart .box .fa-trash:hover {
+    color: orange;
+  }
+  .header .shopping-cart .box h3 {
+    color: black;
+    padding-bottom: 1rem;
+    font-size: 1.7rem;
+  }
+  .header .shopping-cart .box .content span {
+    color: black;
+    padding-bottom: 1rem;
+    font-size: 1.6rem;
+  }
+  .header .shopping-cart .box .content .quantity {
+    padding-left: 1rem;
+  }
+  .header .shopping-cart .total {
+    text-align: center;
+    font-size: 2.5rem;
+    padding: 1rem 0;
+    color: black;
+  }
+  .header .shopping-cart .btn {
+    display: block;
+    text-align: center;
+    margin: 1rem;
+  } */
+  .header .login {
+    position: absolute;
+    top: 110%;
+    right: -110%;
+    width: 35rem;
+    padding: 2rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    text-align: center;
+  }
+  .header .login.active-login {
+    right: 2rem;
+    transition: 0.4s linear;
+  }
+  .header .login h3 {
+    font-size: 2.5rem;
+    color: var(--black);
+    text-transform: uppercase;
+  }
+  .header .login .box {
+    width: 100%;
+    margin: 0.7rem 0;
+    background-color: #eee;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    font-size: 1.6rem;
+    color: black;
+    text-transform: none;
+  }
+  .header .login .para {
+    font-size: 1.4rem;
+    padding: 0.5rem 0;
+    color: gray;
+  }
+  .header .login .para a {
+    text-decoration: underline;
+    color: orange;
+  }
+  
+
+  @media (max-width: 991px) {
+    html {
+      font-size: 55%;
+    }
+    .header {
+      padding: 2rem;
+    }
+    section {
+      padding: 2rem;
+    }
+    .noti{
+      right: 7.5rem;
+    }
+  }
+  @media (max-width: 768px) {
+    #menu-btn {
+      display: inline-block;
+   
+    }
+    .slick-prev {
+  display: none;
+ 
+    }
+    
+    .slick-next {
+   display: none;
+    }
+   #close-btn{
+     display: block;
+   }
+    
+    .header .navbar {
+      position: fixed;
+        top:-120%; left:0;
+        width:100%;
+      background-color: #fff;
+      border-radius: 0.5rem;
+      box-shadow: var(--box-shadow);
+    }
+    .header .shopping-cart {
+      width: 100%;
+    }
+    .noti{
+      right: 7.5rem;
+    }
+  
+    .header .navbar.is-expanded {
+      top:6.4rem;
+      transition: 0.4s linear;
+    }
+    .header .navbar a {
+      font-size: 2rem;
+      margin: 2rem 2.5rem;
+      display: block;
+    }
+    .header .search-form {
+      width: 90%;
+    }
+  }
+  
+  @media (max-width: 450px) {
+    html {
+      font-size: 50%;
+    }
+    .heading {
+      font-size: 2.5rem;
+    }
+  }

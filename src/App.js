@@ -1,11 +1,22 @@
-import logo from './logo.svg';
+import React from 'react'
 import './App.css';
+import Nav from './component/navbar/Nav';
+import {BrowserRouter,Routes,Route} from 'react-router-dom'
+import About from './pages/about';
+import Contact from './pages/contact';
 
 function App() {
-  return (
-    <div className="App bg-red-600 w-40 p-6">
-     hello 
-    </div>
+return(
+
+ <>
+<BrowserRouter>
+<Nav/>
+<Routes>
+<Route exact path='/about' element={<About/>}/>
+<Route exact path='/contact' element={<Contact/>}/>
+</Routes>
+</BrowserRouter>
+ </>
   );
 }
 
